@@ -1,0 +1,90 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+p {
+    display: block;
+}
+
+img{
+    width: 72px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px #EDEDED solid;
+}
+
+#menu {
+    width: 25px;
+    height: 25px;
+}
+
+#header-title {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px 0px;
+}
+
+#cos {
+    width: 25px;
+    height: 25px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px #EDEDED solid;
+}
+
+#main-title {
+    font-size: 20px;
+    margin: 6px 0px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.main-btn{
+
+    border:  1px  #3ddc91 solid;
+    background-color: #3ddc91;
+    padding: 0px;
+    border-radius: 5px;
+    font-size: 17px;
+    width: 250px;
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 15px ;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(19, 35, 34);
+    color: white;
+    margin-top: 201px;
+    padding: 25px 35px;
+
+    align-self: flex-end;
+}
+
+.logo{
+    width: 30px;
+}

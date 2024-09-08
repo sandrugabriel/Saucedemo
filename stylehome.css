@@ -1,0 +1,449 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+p {
+    display: block;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px #EDEDED solid;
+}
+
+#menu {
+    width: 25px;
+    height: 25px;
+}
+
+#header-title {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px 0px;
+}
+
+#cos {
+    width: 25px;
+    height: 25px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px #EDEDED solid;
+}
+
+#main-title {
+    font-size: 20px;
+    margin: 6px 0px;
+}
+
+#img-filter {
+    width: 17px;
+    height: 17px;
+    margin-left: -200px;
+}
+
+.select-filter {
+    width: 210px;
+    text-align: center;
+    margin-left: -200px;
+}
+
+.main-products {
+    padding: 20px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+        "backpack light"
+        "tshirt jacket";
+}
+
+#backpack-img {
+    grid-area: backpack-img;
+    height: 248px;
+    border-radius: 5%;
+}
+
+#backpack-title {
+    grid-area: backpack-title;
+    color: rgb(56, 60, 54);
+}
+
+#backpack-info {
+    grid-area: backpack-info;
+    padding-right: 10px;
+    margin-top: 0px;
+}
+
+#backpack-price {
+    display: block;
+    grid-area: backpack-price;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border-top: 2px #EDEDED solid;
+}
+
+#backpack-btn {
+    border: 1px black solid;
+    padding: 0px;
+    border-radius: 5px;
+    grid-area: backpack-btn;
+    font-size: 17px;
+    width: 160px;
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+}
+
+#backpack {
+    grid-area: backpack;
+    border: 1px #EDEDED solid;
+    border-radius: 5%;
+    width: 500px;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-areas:
+        "backpack-img backpack-title backpack-title"
+        "backpack-img backpack-info backpack-info"
+        "backpack-img backpack-price backpack-btn";
+
+}
+
+#light-img {
+    grid-area: light-img;
+    height: 248px;
+    border-radius: 5%;
+}
+
+#light-title {
+    grid-area: light-title;
+    color: rgb(56, 60, 54);
+}
+
+#light-info {
+    grid-area: light-info;
+    padding-right: 10px;
+    margin-top: 0px;
+}
+
+#light-price {
+    display: block;
+    grid-area: light-price;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border-top: 2px #EDEDED solid;
+}
+
+#light-btn {
+    border: 1px black solid;
+    padding: 0px;
+    border-radius: 5px;
+    grid-area: light-btn;
+    font-size: 17px;
+    width: 160px;
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+}
+
+#light {
+    grid-area: light;
+    border: 1px #EDEDED solid;
+    border-radius: 5%;
+    width: 500px;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-areas:
+        "light-img light-title light-title"
+        "light-img light-info light-info"
+        "light-img light-price light-btn";
+
+}
+
+#tshirt-img {
+    grid-area: tshirt-img;
+    height: 248px;
+    border-radius: 5%;
+}
+
+#tshirt-title {
+    grid-area: tshirt-title;
+    color: rgb(56, 60, 54);
+}
+
+#tshirt-info {
+    grid-area: tshirt-info;
+    padding-right: 10px;
+    margin-top: 0px;
+}
+
+#tshirt-price {
+    display: block;
+    grid-area: tshirt-price;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border-top: 2px #EDEDED solid;
+}
+
+#tshirt-btn {
+    border: 1px black solid;
+    padding: 0px;
+    border-radius: 5px;
+    grid-area: tshirt-btn;
+    font-size: 17px;
+    width: 160px;
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+}
+
+#tshirt {
+    grid-area: tshirt;
+    border: 1px #EDEDED solid;
+    border-radius: 5%;
+    width: 500px;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-areas:
+        "tshirt-img tshirt-title tshirt-title"
+        "tshirt-img tshirt-info tshirt-info"
+        "tshirt-img tshirt-price tshirt-btn";
+
+}
+
+#jacket-img {
+    grid-area: jacket-img;
+    height: 248px;
+    border-radius: 5%;
+}
+
+#jacket-title {
+    grid-area: jacket-title;
+    color: rgb(56, 60, 54);
+}
+
+#jacket-info {
+    grid-area: jacket-info;
+    padding-right: 10px;
+    margin-top: 0px;
+}
+
+#jacket-price {
+    display: block;
+    grid-area: jacket-price;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border-top: 2px #EDEDED solid;
+}
+
+#jacket-btn {
+    border: 1px black solid;
+    padding: 0px;
+    border-radius: 5px;
+    grid-area: jacket-btn;
+    font-size: 17px;
+    width: 160px;
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+}
+
+#jacket {
+    grid-area: jacket;
+    border: 1px #EDEDED solid;
+    border-radius: 5%;
+    width: 500px;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-areas:
+        "jacket-img jacket-title jacket-title"
+        "jacket-img jacket-info jacket-info"
+        "jacket-img jacket-price jacket-btn";
+
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(19, 35, 34);
+    color: white;
+    margin-top: 15px;
+    padding: 25px 35px;
+}
+
+.logo{
+    width: 30px;
+}
+
+@media(max-width: 1050px) {
+
+    .main-products {
+        padding-left: 15px;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "backpack"
+            "light"
+            "tshirt"
+            "jacket";
+    }
+
+    #backpack {
+        width: 100%;
+    }
+
+    #light {
+        width: 100%;
+    }
+
+    #tshirt {
+        width: 100%;
+    }
+
+    #jacket {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:450px) {
+
+    .filter {
+        flex-direction: column;
+    }
+
+    .select-filter {
+        margin-left: -100px;
+    }
+
+    .main-products {
+        padding: 0px 5px;
+    }
+
+    #backpack {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+        /* grid-template-columns: 1fr;
+        width: 80%;
+        grid-template-areas:
+            "backpack-img"
+            "backpack-title"
+            "backpack-info"
+            "backpack-price"
+            "backpack-btn"; */
+
+    }
+
+    #backpack-price {
+        width: 70px;
+       
+    }
+
+    #backpack-btn {
+        margin-bottom: 10%;
+    }
+
+    #light {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+        /* grid-template-columns: 1fr;
+        width: 80%;
+        grid-template-areas:
+            "backpack-img"
+            "backpack-title"
+            "backpack-info"
+            "backpack-price"
+            "backpack-btn"; */
+
+    }
+
+    #light-price {
+        width: 70px;
+       
+    }
+
+    #light-btn {
+        margin-bottom: 10%;
+    }
+
+    #tshirt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+        /* grid-template-columns: 1fr;
+        width: 80%;
+        grid-template-areas:
+            "backpack-img"
+            "backpack-title"
+            "backpack-info"
+            "backpack-price"
+            "backpack-btn"; */
+
+    }
+
+    #tshirt-price {
+        width: 70px;
+       
+    }
+
+    #tshirt-btn {
+        margin-bottom: 10%;
+    }
+
+    #jacket {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+        /* grid-template-columns: 1fr;
+        width: 80%;
+        grid-template-areas:
+            "backpack-img"
+            "backpack-title"
+            "backpack-info"
+            "backpack-price"
+            "backpack-btn"; */
+
+    }
+
+    #jacket-price {
+        width: 70px;
+       
+    }
+
+    #jacket-btn {
+        margin-bottom: 10%;
+    }
+
+
+}
+

@@ -1,0 +1,123 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEFCF6;
+    padding: 0px 2%;
+}
+
+#header-title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.textboxes {
+    display: block;
+    width: 250px;
+    font-size: 17px;
+    height: 31px;
+    border: 0px;
+    border-bottom: 2px #EDEDED solid;
+}
+
+#btnLogin {
+    background-color: #3DDC91;
+    width: 258px;
+    height: 45px;
+    font-size: 21px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+#linkbtn{
+    text-decoration: none;
+    color: #132322;
+}
+
+a:checked{
+    text-decoration: none;
+    color: #132322;
+}
+
+.info-login {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+
+#accepted-names {
+    grid-area: accepted-names;
+}
+
+#usernames {
+    grid-area: usernames;
+}
+
+#accepted-pass {
+    grid-area: accepted-pass;
+}
+
+#password {
+    grid-area: password;
+}
+
+.data-login {
+    background-color: #132322;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "accepted-names"
+        "usernames"
+        " accepted-pass"
+        "password";
+    padding: 0px 10%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* height: 250px; */
+}
+
+.main-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px #EDEDED solid;
+}
+
+@media(min-width:900px){
+    body {
+        padding: 0px 20%;
+    }
+
+    .data-login {
+        background-color: #132322;
+        color: #ffffff;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "accepted-names accepted-pass "
+            "usernames password";
+        padding: 0px 10%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 250px;
+    }
+    
+
+
+    
+}
