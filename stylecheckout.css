@@ -1,0 +1,150 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+p {
+    display: block;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px #EDEDED solid;
+}
+
+#menu {
+    width: 25px;
+    height: 25px;
+}
+
+#header-title {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px 0px;
+}
+
+#cos {
+    width: 25px;
+    height: 25px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px #EDEDED solid;
+}
+
+#main-title {
+    font-size: 20px;
+    margin: 6px 0px;
+}
+
+.main-item{
+    padding: 0 5%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.your-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    margin: 100px 2%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px #EDEDED solid;
+
+    justify-self: center;
+}
+
+.your-info {
+    /* width: 100%; */
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textboxes {
+    display: block;
+    width: 250px;
+    font-size: 17px;
+    height: 31px;
+    border: 0px;
+    border-bottom: 2px #EDEDED solid;
+}
+
+.main-buttons{
+    border-top: 2px #EDEDED solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.main-btn{
+    border:  1px black solid;
+    padding: 0px;
+    border-radius: 5px;
+    font-size: 17px;
+    width: 100%;
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+    margin-bottom: 15px ;
+}
+
+.checkout{
+    border:  1px  #3ddc91 solid;
+    background-color: #3ddc91;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(19, 35, 34);
+    color: white;
+    margin-top: 15px;
+    padding: 25px 35px;
+}
+
+.logo{
+    width: 30px;
+}
+
+@media(min-width:725px){
+
+    .main-item{
+        padding: 0px 100px;
+    }
+
+    .main-buttons{
+        flex-direction: row;
+    }
+
+    .main-btn{
+        width: 250px;
+    }
+    .your-information {
+        margin: 100px 25%;
+        height: 250px;
+        width: 420px;
+    }
+}
